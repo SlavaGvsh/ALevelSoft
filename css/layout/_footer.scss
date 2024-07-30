@@ -1,0 +1,28 @@
+.footer {
+   &__container{
+      display: block;
+   }
+   &__body{
+
+   }
+   .info{
+      display: flex;
+      justify-content: flex-start;
+      gap: 11.7rem;
+      &__item{
+         color: $color-primary_accent_orange;
+         display: flex;
+         flex-direction: column;
+      }
+   }
+   .social{
+      &__list{
+         @include display-flex;
+         gap: 2.4rem;
+      }
+   }
+   &__bottom{
+      @include display-flex;
+
+   }
+}

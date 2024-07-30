@@ -1,0 +1,43 @@
+html {
+   font-size: calc(10px / 16px * 100%);
+   @include respond(tab-land) {
+      font-size: calc(9px / 16px * 100%);
+   }
+   @include respond(tab-port) {
+      font-size: calc(7px / 16px * 100%);
+   }
+   @include respond(phone) {
+      font-size: calc(5px / 16px * 100%);
+   }
+   @include respond(big-screen) {
+      font-size: calc(14px / 16px * 100%);
+   }
+}
+body {
+   font-family: "Source Sans 3", sans-serif;
+   font-weight: 600;
+   font-style: normal;
+   color: $color-primary_light;
+   font-size: $font-size-paragraph;
+   // padding: 0;
+   background: $bg-color;
+}
+a{
+   color: $color-primary_white;
+}
+[class*="__container"] {
+   max-width: 115rem;
+   margin: 0 auto;
+   padding: 0px 1.5rem;
+}
+// body.checked {
+//    overflow: hidden;
+// }
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100%;
+}
+.main {
+   flex: 1 1 auto;
+}
