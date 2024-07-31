@@ -1,13 +1,13 @@
 html {
    font-size: calc(10px / 16px * 100%);
    @include respond(tab-land) {
-      font-size: calc(9px / 16px * 100%);
+      font-size: calc(10px / 16px * 100%);
    }
    @include respond(tab-port) {
-      font-size: calc(7px / 16px * 100%);
+      font-size: calc(10px / 16px * 100%);
    }
    @include respond(phone) {
-      font-size: calc(5px / 16px * 100%);
+      font-size: calc(10px / 16px * 100%);
    }
    @include respond(big-screen) {
       font-size: calc(14px / 16px * 100%);
@@ -24,9 +24,10 @@ body {
 }
 a{
    color: $color-primary_white;
+   font-size: 1.8rem;
 }
 [class*="__container"] {
-   max-width: 115rem;
+   max-width: 1150px;
    margin: 0 auto;
    padding: 0px 1.5rem;
 }

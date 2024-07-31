@@ -1,28 +1,96 @@
 .footer {
-   &__container{
+   padding: 6.4rem 0 0 0;
+   &__container {
       display: block;
    }
-   &__body{
-
+   &__flex {
+      @include respond(phone) {
+         display: flex;
+         flex-direction: column-reverse;
+         align-items: center;
+      }
    }
-   .info{
+   &__logo {
+      margin: 0 0 7.9rem 0;
+   }
+   &__body {
+      margin: 0 0 4rem 0;
+      width: 100%;
+   }
+   .info {
       display: flex;
       justify-content: flex-start;
       gap: 11.7rem;
-      &__item{
-         color: $color-primary_accent_orange;
+      @include respond(tab-port) {
+         gap: 4rem;
+      }
+      @include respond(phone) {
+         display: flex;
+         flex-direction: column;
+         align-items: start;
+      }
+
+      &__item {
          display: flex;
          flex-direction: column;
       }
-   }
-   .social{
-      &__list{
-         @include display-flex;
-         gap: 2.4rem;
+      &__title {
+         font-size: 1.6rem;
+         line-height: 1.12;
+         color: $color-primary_accent_orange;
+         text-transform: uppercase;
+         margin: 0 0 0.8rem 0;
+      }
+      &__link {
+         font-size: 1.8rem;
+         font-weight: 400;
+         line-height: 1.33;
+         color: $color-primary_light;
       }
    }
-   &__bottom{
+   &__bottom {
       @include display-flex;
+      border-top: 0.1rem solid $color-secondary_light_green;
+      padding: 2rem 0;
+      @include respond(phone) {
+         flex-direction: column-reverse;
+      }
+   }
+   .social {
+      &__list {
+         @include display-flex;
+         gap: 2.4rem;
+         @include respond(phone-mini) {
+            flex-direction: column;
+            align-items: flex-start;
+         }
+      }
+      &__link {
+         font-size: 1.8rem;
+         font-weight: 400;
+         line-height: 1;
+         text-transform: uppercase;
+      }
+   }
+   &__copyright {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.71;
+   }
+   &__nav {
+      .nav__list {
+         @include respond(phone-middle) {
+            flex-wrap: wrap ;
+            justify-content: center;
+         }
+      }
 
+      @include respond(phone) {
+         margin: 0 0 2rem 0;
+      }
+      .nav__link {
+         font-size: 1.6rem;
+         line-height: 1.12;
+      }
    }
 }
