@@ -134,24 +134,14 @@ a {
   flex: 1 1 auto;
 }
 
-.text-align-center {
-  text-align: center;
+.color-text {
+  font-style: italic;
+  color: #58F6F2;
+  text-align: right;
 }
 
-.mb-10 {
-  margin-bottom: 1rem;
-}
-
-.mb-30 {
-  margin-bottom: 3rem;
-}
-
-.mb-50 {
-  margin-bottom: 5rem;
-}
-
-.mb-80 {
-  margin-bottom: 8rem;
+.ml-96 {
+  margin-left: -9.6rem;
 }
 
 .btn, .btn:link, .btn:visited {
@@ -182,13 +172,14 @@ a {
 }
 
 .cta__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 25.5rem;
   height: 25.5rem;
   background-color: #ffad0e;
   color: #142625;
+  border: 0.1rem solid #ffad0e;
   font-size: 1.8rem;
   line-height: 1.33;
   font-weight: 600;
@@ -345,8 +336,170 @@ a {
   line-height: 1.12;
 }
 
+.main {
+  background: linear-gradient(180deg, #0abab5 0%, #0a67b8 100%);
+}
+
+.title {
+  font-family: "Source Serif 4", serif;
+  font-size: 7.6rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+}
+
+.label {
+  display: block;
+  font-family: "Source Serif 4", serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.hero {
+  background-color: #142625;
+}
 .hero__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 6rem 1.5rem 13.8rem 1.5rem;
+}
+.hero__content {
+  text-align: left;
+  padding-left: 9.6rem;
+}
+.hero__title {
+  margin-bottom: 1.6rem;
+}
+.hero__label {
+  margin-bottom: 25.7rem;
+}
+.hero .scroll-to-explore {
+  display: inline-block;
+  vertical-align: top;
+}
+.hero .scroll-to-explore a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+  text-transform: uppercase;
+  color: #ffad0e;
+  padding-right: 1rem;
+}
+
+.number__container {
+  padding: 18.6rem 1.5rem 8.8rem 1.5rem;
+}
+.number__content {
+  padding-left: 9.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10.7rem;
+}
+.number__title {
+  margin-bottom: 1.6rem;
+}
+.number__label {
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #fff;
+  max-width: 44.5rem;
+}
+.number__services {
+  width: 34.8rem;
+  padding-top: 8rem;
+  text-align: right;
+}
+.number__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.1rem;
+}
+.number__item {
+  max-width: 25%;
+}
+.number__value {
+  display: block;
+  font-size: 9.6rem;
+  font-weight: 300;
+  line-height: 1.25;
+  color: #e5fcfa;
+  margin-bottom: 2.4rem;
+}
+.number__text {
+  display: block;
+  font-family: "Source Serif 4", serif;
+  color: #58f6f2;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.services__subtitle {
+  display: block;
+  font-family: "Source Serif 4", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #0a10b8;
+  margin-bottom: 3.2rem;
+}
+.services__cta a {
+  box-shadow: 0px 4px 12px 0px rgba(20, 38, 37, 0.2392156863);
+}
+
+.testimonial__container {
+  background-color: #e5fcfa;
+  border-radius: 32px 0px 0px 32px;
+  position: relative;
+}
+.testimonial__container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 100%;
+  background-color: #e5fcfa;
+}
+.testimonial__body {
+  padding: 15.6rem 0 8.4rem 9.7rem;
+}
+.testimonial__text {
+  font-family: "Source Serif 4", serif;
+  color: #142625;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 2.4rem;
+  position: relative;
+}
+.testimonial__text::after {
+  content: "";
+  width: 6.6rem;
+  height: 5.7rem;
+  background: url("/img/section-testimonial/icon-quotes.svg") no-repeat center center/cover;
+  position: absolute;
+  top: -8rem;
+  left: 0;
+}
+.testimonial__text::before {
+  content: "";
+  width: 16rem;
+  height: 9.1rem;
+  background: url("/img/section-testimonial/arrow.svg") no-repeat center center/cover;
+  position: absolute;
+  bottom: -10rem;
+  right: 38rem;
+}
+.testimonial__link {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 2.7;
+  color: #0a10b8;
 }/*# sourceMappingURL=style.css.map */
