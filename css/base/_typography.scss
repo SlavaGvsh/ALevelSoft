@@ -1,6 +1,115 @@
 // Тут мы описываем наши стили для основных элементов
 .color-text {
    font-style: italic;
-   color: #58F6F2;
+   color: #58f6f2;
    text-align: right;
+}
+.cta {
+   &__button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 25.5rem;
+      height: 25.5rem;
+      background-color: $color-primary_accent_orange;
+      color: $color-primary_dark_green;
+      border: 0.1rem solid $border-color-btn;
+      font-size: 1.8rem;
+      line-height: 1.33;
+      font-weight: 600;
+      border-radius: 50%;
+      text-transform: uppercase;
+      text-align: center;
+   }
+}
+.card {
+   width: 16rem;
+   height: 16rem;
+   display: inline-flex;
+   flex-direction: column;
+   background-color: rgba(20, 38, 37, 0.12);
+   border-radius: 1.6rem;
+   border: 0.1rem solid #58f6f2;
+   padding: 2.7rem 1.2rem;
+   align-items: center;
+   &__img {
+      margin-bottom: 1.6rem;
+   }
+   &__title {
+      font-size: 2rem;
+      color: $color-primary_light;
+   }
+}
+.card-solutions {
+   width: 35.2rem;
+   height: 40rem;
+   padding: 3.2rem 2.4rem 2.2rem;
+   background-color: rgba(20, 38, 37, 0.12);
+   border: 0.1rem solid #58f6f2;
+   border-radius: 1.6rem;
+   // position: relative;
+   // &::before{
+   //    content: '01';
+   //       position: absolute;
+   //       top: 0;
+   //       right: 0;
+   //       width: 2.2rem;
+   //       height: 1.8rem;
+   //       color: $bg-color;
+   // }
+   &__top {
+      margin-bottom: 3.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+   }
+   &__title {
+      font-family: "Source Serif 4", serif;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 1.2;
+      color: $color-primary_light;
+      margin-bottom: 0.8rem;
+   }
+   &__text {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 1.44;
+      text-align: left;
+      color: #b2eee8;
+      margin-bottom: 5.6rem;
+   }
+   &__link {
+      // display: block;
+      font-size: 1.8rem;
+      font-weight: 600;
+      line-height: 1.33;
+      color: $color-primary_accent_orange;
+      text-transform: uppercase;
+      position: relative;
+      &:hover {
+         opacity: 0.5;
+      }
+      &::before {
+         content: "";
+         background: url(/img/icon/arrow-right.svg) no-repeat;
+         position: absolute;
+         top: 7px;
+         right: -46px;
+         width: 3.5rem;
+         height: 2rem;
+      }
+   }
+}
+
+.cta-block {
+   display: inline-flex;
+   gap: 3.2rem;
+   &__label {
+      display: block;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: $color-primary_light;
+   }
 }

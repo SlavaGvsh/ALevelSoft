@@ -117,15 +117,15 @@
       background-color: $color-primary_light;
       border-radius: 32px 0px 0px 32px;
       position: relative;
-      &::after {
-         content: "";
-         position: absolute;
-         top: 0;
-         left: 100%; 
-         width: 100vw; 
-         height: 100%; 
-         background-color: $color-primary_light;
-      }
+      // &::after {
+      //    content: "";
+      //    position: absolute;
+      //    top: 0;
+      //    left: 100%;
+      //    width: 100%;
+      //    height: 100%;
+      //    background-color: $color-primary_light;
+      // }
    }
    &__body {
       padding: 15.6rem 0 8.4rem 9.7rem;
@@ -163,5 +163,241 @@
       font-weight: 600;
       line-height: 2.7;
       color: #0a10b8;
+   }
+}
+
+.technologies {
+   &__container {
+      padding-top: 16.9rem;
+   }
+   &__top {
+      padding-left: 17.6rem;
+      display: flex;
+      margin-bottom: 6.4rem;
+   }
+   &__title {
+      width: 50%;
+      .color-text {
+         margin-left: -17.6rem;
+      }
+   }
+   &__label {
+      width: 50%;
+      font-size: 2rem;
+   }
+   &__body {
+      display: grid;
+      grid-template-columns: repeat(5, 160px);
+      // grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-rows: repeat(4, auto);
+      grid-gap: 3.2rem;
+      justify-content: end;
+      align-items: center;
+   }
+   .card__text {
+      font-family: "Source Serif 4", serif;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.8;
+      color: $color-primary_light;
+   }
+   .node {
+      grid-column: 1 / 3;
+      grid-row: 1;
+   }
+   .python {
+      grid-column: 2 / 5;
+      grid-row: 1;
+   }
+   .react {
+      grid-column: 1 / 2;
+      grid-row: 2;
+   }
+   .angular {
+      grid-column: 2 / 3;
+      grid-row: 2;
+   }
+   .redux {
+      grid-column: 3 / 4;
+      grid-row: 2;
+   }
+   .type-script {
+      grid-column: 4 / 5;
+      grid-row: 2;
+   }
+   .aws {
+      grid-column: 4 / 5;
+      grid-row: 3;
+   }
+   .azure {
+      grid-column: 5 / 6;
+      grid-row: 3;
+   }
+   .text-grid {
+      grid-column: 1 / 3;
+      grid-row: 4;
+   }
+   .react-native {
+      grid-column: 3 / 4;
+      grid-row: 4;
+   }
+   .swift {
+      grid-column: 4 / 5;
+      grid-row: 4;
+   }
+   .kotlin {
+      grid-column: 5 / 6;
+      grid-row: 4;
+   }
+}
+// @media (max-width: 1200px) {
+//    .technologies__body {
+//       grid-template-columns: repeat(3, 1fr);
+//    }
+//    .node,
+//    .python,
+//    .react,
+//    .angular,
+//    .redux,
+//    .type-script,
+//    .aws,
+//    .azure,
+//    .text-grid,
+//    .react-native,
+//    .swift,
+//    .kotlin {
+//       grid-column: span 3 !important;
+//    }
+// }
+
+// @media (max-width: 992px) {
+//    .technologies__top {
+//       flex-direction: column;
+//       padding-left: 0;
+//    }
+//    .technologies__title,
+//    .technologies__label {
+//       width: 100%;
+//       text-align: center;
+//    }
+//    .technologies__body {
+//       grid-template-columns: repeat(2, 1fr);
+//    }
+//    .node,
+//    .python,
+//    .react,
+//    .angular,
+//    .redux,
+//    .type-script,
+//    .aws,
+//    .azure,
+//    .text-grid,
+//    .react-native,
+//    .swift,
+//    .kotlin {
+//       grid-column: span 2 !important;
+//    }
+// }
+
+// @media (max-width: 768px) {
+//    .technologies__body {
+//       grid-template-columns: 1fr;
+//    }
+//    .node,
+//    .python,
+//    .react,
+//    .angular,
+//    .redux,
+//    .type-script,
+//    .aws,
+//    .azure,
+//    .text-grid,
+//    .react-native,
+//    .swift,
+//    .kotlin {
+//       grid-column: span 1 !important;
+//    }
+//    .text-grid {
+//       grid-row: span 1 !important;
+//    }
+// }
+
+.solutions {
+   &__container {
+      padding-top: 25.4rem;
+      display: grid;
+      grid-template-columns: repeat(3, 352px);
+      // grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-rows: repeat(3, auto);
+      grid-gap: 3.2rem;
+      justify-content: end;
+      align-items: center;
+   }
+   &__title {
+      margin-bottom: 2.4rem;
+   }
+   &__text {
+      padding-left: 9.6rem;
+   }
+   &__label {
+      font-family: "Source Sans 3", sans-serif;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.8;
+      max-width: 35.2rem;
+   }
+   &__subtitle {
+      font-family: "Source Serif 4", serif;
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 1.11;
+      color: $color-primary_light;
+      margin-bottom: 1.1rem;
+      span {
+         margin: 0 0 0 -9.6rem;
+      }
+   }
+   .cta-block {
+      &__label {
+         position: relative;
+         &::before {
+            content: "";
+            width: 9.6rem;
+            height: 7.5rem;
+            background: url("/img/icon/arrow-down-big.svg") no-repeat;
+            position: absolute;
+            bottom: 9.6rem;
+            right: 1.2rem;
+         }
+      }
+   }
+   &__item1 {
+      grid-column: 1 / 3;
+      grid-row: 1;
+   }
+   &__item2 {
+      grid-column: 3 / 3;
+      grid-row: 1;
+   }
+   &__item3{
+      grid-column: 1 / 2;
+      grid-row: 2;
+   }
+   &__item4{
+      grid-column: 2 / 3;
+      grid-row: 2;
+   }
+   &__item5{
+      grid-column: 3 / 4;
+      grid-row: 2;
+   }
+   &__item6{
+      grid-column: 1 / 2;
+      grid-row: 3;
+   }
+   &__item7{
+      grid-column: 2 / 5;
+      grid-row: 3;
+      justify-self: end;
    }
 }
