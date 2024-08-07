@@ -1,6 +1,6 @@
 .header {
    &__container {
-      padding: 2.8rem 1.5rem;
+      padding: 2.7rem 1.5rem;
       @include display-flex;
       @include respond(phone) {
         justify-content: space-between;
@@ -15,10 +15,10 @@
 }
 .nav {
    @include display-flex;
-   gap: 4rem;
+   gap: 4.1rem;
    &__list {
       @include display-flex;
-      gap: 3.6rem;
+      gap: 4.0rem;
    }
    &__link {
       color: $color-link-header;

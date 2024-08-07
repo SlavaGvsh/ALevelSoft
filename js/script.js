@@ -4,34 +4,60 @@
 //     $("body").toggleClass("lock");
 //   });
 // });
+$(document).ready(function () {
+  var owl = $(".hero__carousel");
+  owl.owlCarousel({
+    items: 1, // Количество отображаемых элементов
+    loop: true, // Зацикливание
+    margin: 20,
+    nav: false, // Отключение стандартных кнопок навигации
+    dots: true, // Включение точек навигации
+    dotsContainer: ".custom-dots", // Указание контейнера для точек
+  });
 
-$(".hero__carousel").owlCarousel({
-   items: 1, // Показать один элемент за раз
-   nav: false, // Отключить встроенную навигацию
-   dots: false, // Отключить встроенные точки
+  // Привязка пользовательских кнопок
+  $(".custom-prev").click(function () {
+    owl.trigger("prev.owl.carousel");
+  });
+
+  $(".custom-next").click(function () {
+    owl.trigger("next.owl.carousel");
+  });
 });
 
-$(document).ready(function() {
-   var owl = $('.owl-carousel').owlCarousel({
-       items: 1, // Показать один элемент за раз
-       nav: false, // Отключить встроенную навигацию
-       dots: false, // Отключить встроенные точки
-       onInitialized: updateIndicator, // Обновить индикатор при инициализации
-       onTranslated: updateIndicator // Обновить индикатор при смене слайда
-   });
+// $(".hero__carousel").owlCarousel({
+//    items: 1, // Показать один элемент за раз
+//    nav: false, // Отключить встроенную навигацию
+//    dots: false, // Отключить встроенные точки
+// });
 
-   // Кастомная навигация
-   $('.custom-prev').click(function() {
-       owl.trigger('prev.owl.carousel');
-   });
+$(document).ready(function () {
+  var owl = $(".owl-carousel").owlCarousel({
+    items: 1, // Показать один элемент за раз
+    nav: false, // Отключить встроенную навигацию
+    dots: false, // Отключить встроенные точки
+    onInitialized: updateIndicator, // Обновить индикатор при инициализации
+    onTranslated: updateIndicator, // Обновить индикатор при смене слайда
+  });
 
-   $('.custom-next').click(function() {
-       owl.trigger('next.owl.carousel');
-   });
+  // Кастомная навигация
+  $(".custom-prev").click(function () {
+    owl.trigger("prev.owl.carousel");
+  });
 
-   function updateIndicator(event) {
-       var totalItems = event.item.count; // Общее количество элементов
-       var currentItem = event.item.index + 1; // Текущий индекс элемента + 1 (т.к. индексы начинаются с 0)
-       $('.slide-indicator').text(currentItem + '/' + totalItems);
-   }
+  $(".custom-next").click(function () {
+    owl.trigger("next.owl.carousel");
+  });
+
+  function updateIndicator(event) {
+    var totalItems = event.item.count; // Общее количество элементов
+    var currentItem = event.item.index + 1; // Текущий индекс элемента + 1 (т.к. индексы начинаются с 0)
+    $(".slide-indicator").text(currentItem + "/" + totalItems);
+  }
 });
+
+
+document.getElementById('file-upload').addEventListener('change', function() {
+    var fileName = this.files[0].name;
+    document.getElementById('file-upload-name').textContent = fileName;
+  });

@@ -62,15 +62,32 @@
                 <img src="img/icon/arrow-down.svg" alt="" />
               </div>
             </div>
-            <div
-              class="hero__carousel owl-carousel owl-theme"
-            >
-              <div class=" hero__carousel-item"><span>Transporting Smart City app is a cutting-edge
-                mobile application designed to revolutionize
-                urban transportation. </span><img src="/img/section-hero/img1.png" alt=""></div>
-              <div class="hero__carousel-item"><img src="/img/section-hero/img1.png" alt=""></div>
-              <div class="hero__carousel-item"><img src="/img/section-hero/img1.png" alt=""></div>
+            <div class="hero__wrapper">
+              <div class="hero__carousel owl-carousel owl-theme">
+                <div class="hero__carousel-item">
+                  <span
+                    >Transporting Smart City app is a cutting-edge mobile
+                    application designed to revolutionize urban transportation. </span
+                  ><img src="/img/section-hero/img1.png" alt="" />
+                </div>
+                <div class="hero__carousel-item">
+                  <img src="/img/section-hero/img1.png" alt="" />
+                </div>
+                <div class="hero__carousel-item">
+                  <img src="/img/section-hero/img1.png" alt="" />
+                </div>
+              </div>
+              <div class="custom-nav">
+                <button class="custom-prev">
+                  <img src="img/icon/arrow-left-hero.svg" alt="Previous" />
+                </button>
+                <div class="custom-dots"></div>
+                <button class="custom-next">
+                  <img src="img/icon/arrow-right-hero.svg" alt="Next" />
+                </button>
+              </div>
             </div>
+
             <div class="hero__cta cta">
               <a href="#" class="cta__button"
                 >Check Our <br />
@@ -143,7 +160,6 @@
             </div>
           </div>
         </section>
-
         <section class="technologies">
           <div class="technologies__container">
             <div class="technologies__top">
@@ -483,10 +499,10 @@
               </div>
             </div>
             <div class="solutions-process__cta cta-block pl-50">
-              <span class="cta-block__label"
-                ><span class="ml-96"></span> Ready to take <br />
-                <span class="">the next step?</span></span
-              >
+              <span class="cta-block__label">
+                <span class="ml-96"></span> Ready to take <br />
+                <span class="">the next step?</span>
+              </span>
               <div class="cta">
                 <a href="#" class="cta__button">Let’s discuss</a>
               </div>
@@ -663,12 +679,12 @@
                 </div>
                 <div class="custom-nav">
                   <button class="custom-prev">
-                    <img src="img/icon/arrow-nav-down-right.svg" alt="" />
+                    <img src="img/icon/arrow-nav-down-left.svg" alt="" />
                   </button>
                   <span class="slide-indicator">1/4</span>
-                 
+
                   <button class="custom-next">
-                    <img src="img/icon/arrow-nav-down-left.svg" alt="" />
+                    <img src="img/icon/arrow-nav-down-right.svg" alt="" />
                   </button>
                 </div>
               </div>
@@ -681,41 +697,84 @@
               <span class="first-line">
                 Let's <span class="color-text">chat</span> about
               </span>
-              <br /><span class="color-text second-line"> your goals</span> 
+              <br /><span class="color-text second-line"> your goals</span>
             </h2>
             <div class="contact__body">
-              <p class="contact__text">You have the vision, we have the expertise. Let's chat about your goals
-                and build something amazing together. We're here to turn dreams into reality. Ready to achieve more?</p>
-                <div class="contact__form">
-                  <form action="#" method="post">
-                      <div class="form__group">
-                        <input class="input" placeholder="none" type="text" id="name" name="name" required>
-                        <label for="name">NAME*</label>
-                      </div>
-                      <div class="form__group">
-                        <input class="input" placeholder="none" type="email" id="email" name="email" required>
-                        <label for="email">EMAIL*</label>
-                      </div>
-                      <div class="form__group ">
-                        <textarea class="input" placeholder="none" id="message" name="message" rows="3"></textarea>
-                        <label for="message">YOUR MESSAGE</label>
-                      </div>
-                      <div class="form__group-upload">
-                          <label for="file-upload" class="file-upload">
-                              <input class="input-upload" type="file" id="file-upload" name="file-upload" accept=".pdf,.doc,.docx,.png,.zip,.rar,.xls">
-                              <img src="img/icon/icon-upload.svg" alt=""><span class="upload-text">UPLOAD FILE </span> <span class="file-types">(.pdf, .docx, .png, .zip, .rar, .xls)</span>
-                          </label>
-                      </div>
-                      <div class="form__group-checkbox">
-                          <label>
-                              <input class="checkbox" type="checkbox" name="terms" required>
-                              <span class="checkmark"></span>
-                              <span>
-                              Accept <a href="#">Terms of Services</a> and <a href="#">Privacy Policy</a></span>
-                          </label>
-                      </div>
-                      <button class="submit btn" type="submit">SUBMIT</button>
-                  </form>
+              <p class="contact__text">
+                You have the vision, we have the expertise. Let's chat about
+                your goals and build something amazing together. We're here to
+                turn dreams into reality. Ready to achieve more?
+              </p>
+              <div class="contact__form">
+                <form action="#" method="post">
+                  <div class="form__group">
+                    <input
+                      class="input"
+                      placeholder="none"
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                    />
+                    <label for="name">NAME*</label>
+                  </div>
+                  <div class="form__group">
+                    <input
+                      class="input"
+                      placeholder="none"
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                    />
+                    <label for="email">EMAIL*</label>
+                  </div>
+                  <div class="form__group">
+                    <textarea
+                      class="input"
+                      placeholder="none"
+                      id="message"
+                      name="message"
+                      rows="3"
+                    ></textarea>
+                    <label for="message">YOUR MESSAGE</label>
+                  </div>
+                  <div class="form__group-upload">
+                    <label for="file-upload" class="file-upload">
+                      <input
+                        class="input-upload"
+                        type="file"
+                        id="file-upload"
+                        name="file-upload"
+                        accept=".pdf,.doc,.docx,.png,.zip,.rar,.xls"
+                      />
+                      <img src="img/icon/icon-upload.svg" alt="" /><span
+                        class="upload-text"
+                        >UPLOAD FILE
+                      </span>
+                      <span class="file-types"
+                        >(.pdf, .docx, .png, .zip, .rar, .xls)</span
+                      >
+                    </label>
+                  </div>
+                  <div class="form__group-checkbox">
+                    <label>
+                      <input
+                        class="checkbox"
+                        type="checkbox"
+                        name="terms"
+                        required
+                      />
+                      <span class="checkmark"></span>
+                      <span>
+                        Accept <a href="#">Terms of Services</a> and
+                        <a href="#">Privacy Policy</a></span
+                      >
+                    </label>
+                  </div>
+                  <button class="submit btn" type="submit">SUBMIT</button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -759,7 +818,6 @@
                   </ul>
                 </li>
               </ul>
-          
             </div>
           </div>
 
@@ -788,7 +846,6 @@
           </div>
         </div>
       </footer>
-      
     </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
