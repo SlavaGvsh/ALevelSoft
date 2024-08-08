@@ -513,6 +513,7 @@ a {
 }
 
 .hero {
+  background: url("/img/section-hero/bg-hero.png") 50% 50% no-repeat;
   background-color: #142625;
 }
 .hero__container {
@@ -637,6 +638,9 @@ a {
   z-index: 100;
 }
 
+.number {
+  background: url("/img/section-number/bg-numbers.png") 50% 50% no-repeat;
+}
 .number__container {
   padding: 11.8rem 1.5rem 8.8rem 1.5rem;
 }
@@ -755,6 +759,9 @@ a {
   color: #0a10b8;
 }
 
+.technologies {
+  background: url("/img/section-technologies/technology_bg.png") 50% -150% no-repeat;
+}
 .technologies__container {
   padding-top: 15.9rem;
 }
@@ -838,8 +845,12 @@ a {
   grid-row: 4;
 }
 
+.solutions {
+  background: url("/img/section-solutions/solutions_bg.png") 50% 90% no-repeat;
+}
 .solutions__container {
   padding-top: 25.5rem;
+  padding-bottom: 24.2rem;
 }
 .solutions__wrapper {
   display: grid;
@@ -906,7 +917,7 @@ a {
   margin: 0;
 }
 .solutions-process__container {
-  padding-top: 24.2rem;
+  background: url("/img/section-solutions-process/optimal solution_bg.png") 120% 85% no-repeat;
 }
 .solutions-process__title {
   font-size: 7.2rem;
@@ -1159,6 +1170,9 @@ a {
   line-height: 4;
 }
 
+.contact {
+  background: url("/img/section-contact/lets chat_bg.png") 50% 200% no-repeat;
+}
 .contact__container {
   padding: 15.1rem 1.5rem 15.8rem 1.5rem;
 }
