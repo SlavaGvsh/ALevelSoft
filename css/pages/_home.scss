@@ -34,6 +34,9 @@
          color: $color-primary_accent_orange;
          padding-right: 1rem;
       }
+      span {
+         color: $color-primary_accent_orange;
+      }
    }
    &__wrapper {
       position: relative;
@@ -77,6 +80,20 @@
       pointer-events: none;
       gap: 30px;
       z-index: 50;
+      .custom-prev,
+      .custom-next {
+         span {
+            color: $color-primary_accent_orange;
+            font-size: 26px;
+            &:hover {
+               color: $color-orange_hover_btn;
+            }
+            &:active {
+               color: $color-orange_pressed_btn;
+            }
+         }
+      }
+
       button {
          background: none;
          border: none;
@@ -90,6 +107,9 @@
       display: flex;
       gap: 0.8rem;
       pointer-events: all;
+      &:hover {
+         color: $color-orange_hover_btn;
+      }
    }
 
    .custom-dots .owl-dot {
@@ -113,7 +133,7 @@
 }
 .number {
    &__container {
-      padding: 18.6rem 1.5rem 8.8rem 1.5rem;
+      padding: 11.8rem 1.5rem 8.8rem 1.5rem;
    }
    &__content {
       padding-left: 9.6rem;
@@ -125,7 +145,7 @@
       // width: 50%;
    }
    &__title {
-      margin-bottom: 1.6rem;
+      margin-bottom: 2.6rem;
    }
    &__label {
       font-family: "Source Sans 3", sans-serif;
@@ -137,7 +157,7 @@
    }
    &__services {
       width: 34.8rem;
-      padding-top: 8rem;
+      padding-top: 13rem;
       text-align: right;
    }
    &__list {
@@ -146,7 +166,7 @@
       gap: 3.1rem;
    }
    &__item {
-      max-width: 25%;
+      width: 25%;
    }
    &__value {
       display: block;
@@ -154,7 +174,7 @@
       font-weight: 300;
       line-height: 1.25;
       color: $color-primary_light;
-      margin-bottom: 2.4rem;
+      margin-bottom: 0.4rem;
    }
    &__text {
       display: block;
@@ -186,7 +206,7 @@
    &__body {
       background-color: $color-primary_light;
       border-radius: 3.2rem 0 0 3.2rem;
-      padding: 15.6rem 0 8.4rem 9.7rem;
+      padding: 15.4rem 9.2rem 8.4rem 9.7rem;
       position: relative;
 
       &::after {
@@ -210,12 +230,15 @@
       margin-bottom: 2.4rem;
       position: relative;
       &::after {
-         content: "";
-         width: 6.6rem;
-         height: 5.7rem;
-         background: url("/img/icon/icon-quotes.svg") no-repeat center center/cover;
+         font-family: "icomoon" !important;
+         content: "\e915";
+         color: #0a10b8;
+         font-size: 65px;
+         // width: 6.6rem;
+         // height: 5.7rem;
+         // background: url("/img/icon/icon-quotes.svg") no-repeat center center/cover;
          position: absolute;
-         top: -8rem;
+         top: -10rem;
          left: 0;
       }
       &::before {
@@ -224,8 +247,8 @@
          height: 9.1rem;
          background: url("/img/icon/arrow.svg") no-repeat center center/cover;
          position: absolute;
-         bottom: -10rem;
-         right: 38rem;
+         bottom: -116px;
+         right: 4px;
       }
    }
    &__link {
@@ -238,12 +261,12 @@
 
 .technologies {
    &__container {
-      padding-top: 16.9rem;
+      padding-top: 15.9rem;
    }
    &__top {
       padding-left: 17.6rem;
       display: flex;
-      margin-bottom: 6.4rem;
+      margin-bottom: 6rem;
    }
    &__title {
       width: 50%;
@@ -252,6 +275,7 @@
       }
    }
    &__label {
+      padding: 19px 5px 0 22px;
       width: 50%;
       font-size: 2rem;
    }
@@ -394,17 +418,30 @@
 
 .solutions {
    &__container {
-      padding-top: 25.4rem;
+      padding-top: 25.5rem;
+   }
+   &__wrapper {
       display: grid;
       grid-template-columns: repeat(3, 352px);
       // grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       grid-template-rows: repeat(3, auto);
       grid-gap: 3.2rem;
-      justify-content: end;
-      align-items: center;
+      // justify-content: end;
+      // align-items: center;
+   }
+   &__item {
+      // margin-bottom: 3.2rem;
+      // margin-right: 3.2rem;
+      // padding-right: 3.2rem;
+      // &:nth-child(3n) {
+      //    margin-right: 0;
+      // }
+      // &:not(:nth-child(3n)) {
+      //    margin-right: 3.2rem;
+      //  }
    }
    &__title {
-      margin-bottom: 2.4rem;
+      margin-bottom: 1.4rem;
    }
    &__text {
       padding-left: 9.6rem;
@@ -422,7 +459,7 @@
       font-weight: 600;
       line-height: 1.11;
       color: $color-primary_light;
-      margin-bottom: 1.1rem;
+      margin-bottom: 2.2rem;
       span {
          margin: 0 0 0 -9.6rem;
       }
@@ -456,12 +493,16 @@
    &__item7 {
       grid-column: 2 / 5;
       grid-row: 3;
-      justify-self: end;
+      justify-self: center;
+      padding: 29px 0px 0px 143px;
    }
 }
 .solutions-process {
+   p:last-child {
+      margin: 0;
+   }
    &__container {
-      padding-top: 25.4rem;
+      padding-top: 24.2rem;
    }
    &__title {
       font-size: 7.2rem;
@@ -475,7 +516,7 @@
          background: url("/img/icon/arrow-down-left-big.svg") no-repeat;
          position: absolute;
          bottom: -15rem;
-         right: 16rem;
+         right: 9.7rem;
       }
    }
    &__body {
@@ -486,7 +527,7 @@
       grid-gap: 3.2rem;
       justify-content: end;
       align-items: center;
-      margin-bottom: 15.8rem;
+      margin-bottom: 15.2rem;
    }
    &__item1 {
       grid-column: 1 / 2;
@@ -527,7 +568,7 @@
       align-items: center;
       justify-content: flex-start;
       &__img {
-         margin-bottom: 3.7rem;
+         margin-bottom: 3.3rem;
       }
       &__title {
          font-family: "Source Serif 4", serif;
@@ -549,6 +590,9 @@
       width: 73.6rem;
       height: 16.7rem;
       gap: 4rem;
+      .card-big__img {
+         margin: 0;
+      }
    }
    .card__revers {
       flex-direction: row-reverse;
@@ -558,8 +602,8 @@
    }
    &__cta {
       justify-content: flex-end;
-      gap: 12.8rem;
-      margin-bottom: 12.7rem;
+      gap: 14.2rem;
+      margin-bottom: 13.3rem;
       .cta-block__label {
          font-family: "Source Serif 4", serif;
          font-size: 4rem;
@@ -583,7 +627,7 @@
    &__body {
       background-color: $color-primary_light;
       border-radius: 0 3.2rem 3.2rem 0;
-      padding: 16.4rem 9.7rem 16.4rem 0;
+      padding: 15.6rem 9.7rem 15.7rem 0;
       position: relative;
 
       &::after {
@@ -601,7 +645,7 @@
       position: relative;
       color: $color-primary_dark_green;
       // padding-left: 18.8rem;
-      margin-bottom: 12rem;
+      margin-bottom: 12.2rem;
       .second-line {
          // margin-left: -18.8rem;
          padding-left: 28rem;
@@ -624,7 +668,7 @@
       // position: relative;
    }
    &__item {
-      padding-left: 14.5rem;
+      padding-left: 13.3rem;
       color: #000;
    }
    &__quote {
@@ -633,16 +677,16 @@
       font-style: italic;
       font-weight: 600;
       line-height: 1.2;
-      margin-bottom: 2.6rem;
+      margin-bottom: 3rem;
    }
    &__text {
-      margin: 0 0 0 -3.6rem;
-      padding: 0 0 0 3.6rem;
+      margin: 0 0 0 -3.5rem;
+      padding: 0 0 0 3rem;
       border-left: 0.4rem solid #ff790e;
       font-size: 2rem;
       font-weight: 400;
       line-height: 1.8;
-      margin-bottom: 4.9rem;
+      margin-bottom: 4.8rem;
    }
    &__author {
       display: inline-flex;
@@ -677,7 +721,7 @@
       align-items: center;
       margin-top: 10px;
       position: absolute;
-      bottom: 0;
+      bottom: 0.7rem;
       right: 5.5rem;
       z-index: 1;
    }
@@ -694,12 +738,22 @@
       position: absolute;
       top: 50%;
       transform: translatey(-50%);
+      span {
+         color: $color-primary_accent_orange;
+         font-size: 20px;
+         &:hover {
+            color: $color-orange_hover_btn;
+         }
+         &:active {
+            color: $color-orange_pressed_btn;
+         }
+      }
    }
    .custom-prev {
-      left: -5rem;
+      left: -6.3rem;
    }
    .custom-next {
-      right: -5rem;
+      right: -6.5rem;
    }
 
    .slide-indicator {
@@ -715,7 +769,7 @@
 
 .contact {
    &__container {
-      padding: 16.4rem 1.5rem;
+      padding: 15.1rem 1.5rem 15.8rem 1.5rem;
    }
    &__title {
       padding-left: 9.6rem;
@@ -742,8 +796,8 @@
          width: 16rem;
          height: 6.8rem;
          background: url("/img/icon/arrow-right-big.svg") no-repeat;
-         bottom: 15rem;
-         right: -5rem;
+         bottom: 141px;
+         right: -96px;
       }
    }
 }

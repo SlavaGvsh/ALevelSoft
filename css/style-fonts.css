@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?9kkkf3');
+  src:  url('../fonts/icomoon.eot?9kkkf3#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?9kkkf3') format('truetype'),
+    url('../fonts/icomoon.woff?9kkkf3') format('woff'),
+    url('../fonts/icomoon.svg?9kkkf3#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+  content: "\e900";
+}
+.icon-arrow-down:before {
+  content: "\e901";
+}
+.icon-arrow-down-big:before {
+  content: "\e902";
+}
+.icon-arrow-down-left-big:before {
+  content: "\e903";
+}
+.icon-arrow-down-left-big1:before {
+  content: "\e904";
+}
+.icon-arrow-down-right-big:before {
+  content: "\e905";
+}
+.icon-arrow-down-right-big1:before {
+  content: "\e906";
+}
+.icon-arrow-left-hero:before {
+  content: "\e907";
+}
+.icon-arrow-nav-down-left:before {
+  content: "\e908";
+}
+.icon-arrow-nav-down-right:before {
+  content: "\e909";
+}
+.icon-arrow-right:before {
+  content: "\e90a";
+}
+.icon-arrow-right-big:before {
+  content: "\e90b";
+}
+.icon-arrow-right-hero:before {
+  content: "\e90c";
+}
+.icon-arrow-top:before {
+  content: "\e90d";
+}
+.icon-checkmark1:before {
+  content: "\e90e";
+}
+.icon-icon-angular:before {
+  content: "\e90f";
+}
+.icon-icon-aws:before {
+  content: "\e910";
+}
+.icon-icon-kotlin:before {
+  content: "\e913";
+}
+.icon-icon-python:before {
+  content: "\e914";
+}
+.icon-icon-quotes:before {
+  content: "\e915";
+}
+.icon-icon-react:before {
+  content: "\e916";
+}
+.icon-icon-redux:before {
+  content: "\e917";
+}
+.icon-icon-solutions-1:before {
+  content: "\e918";
+}
+.icon-icon-swift:before {
+  content: "\e919";
+}
+.icon-icon-type-script:before {
+  content: "\e91a";
+}
+.icon-icon-upload:before {
+  content: "\e91b";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
