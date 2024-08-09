@@ -1,5 +1,8 @@
-.main {
+.section__wrap {
    background: linear-gradient(180deg, #0abab5 0%, #0a67b8 100%);
+   border-radius: 3.2rem;
+   max-width: 144rem;
+   margin: 0 auto;
 }
 
 .hero {
@@ -42,7 +45,7 @@
    &__content {
       text-align: left;
       padding-left: 9.9rem;
-      padding-top: 12.3rem;
+      padding-top: 23.1rem;
    }
    &__title {
       margin-bottom: 26px;
@@ -569,7 +572,6 @@
    }
 }
 .solutions-process {
-   
    p:last-child {
       margin: 0;
    }

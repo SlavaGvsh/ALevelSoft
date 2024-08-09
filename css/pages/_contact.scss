@@ -1,0 +1,13 @@
+.contact{
+   &__page{
+      // background-color: $color-primary_dark_green;
+      .contact__container{
+         padding: 27.9rem 1.5rem 9.6rem 1.5rem;
+      }
+   }
+   
+}
+.contact.contact__page{
+   background: url("/img/section-contact/lets chat_bg.png") 50% 130% no-repeat  $color-primary_dark_green;
+}
+   

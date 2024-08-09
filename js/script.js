@@ -56,8 +56,18 @@ $(document).ready(function () {
   }
 });
 
+document.getElementById("file-upload").addEventListener("change", function () {
+  var fileName = this.files[0].name;
+  document.getElementById("file-upload-name").textContent = fileName;
+});
 
-document.getElementById('file-upload').addEventListener('change', function() {
-    var fileName = this.files[0].name;
-    document.getElementById('file-upload-name').textContent = fileName;
+document
+  .querySelector(".scroll-to-top")
+  .addEventListener("click", function (e) {
+    e.preventDefault(); // Предотвращает стандартное поведение ссылки
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Плавная прокрутка
+    });
   });
